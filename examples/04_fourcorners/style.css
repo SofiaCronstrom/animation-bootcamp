@@ -15,14 +15,19 @@ aside{
     width: 3rem;
     height: 3rem;
     background-color: rgb(74, 74, 255);
-    animation: cube 5s infinite; 
+    animation: cube 30s linear infinite; 
 }
 
 @keyframes cube {
-    0%   {background-color:rgb(244, 74, 74); left:0px; top:0px;}
-    25%  {background-color:rgb(251, 251, 52); transform: translateX(452px) translateY(0px);}
-    50%  {background-color:rgb(83, 83, 243); transform: translateX(0px) translateY(452px);}
-    75%  {background-color:rgb(85, 247, 85); transform: translateX(452px) translateY(452px);}
-    100% {background-color:rgb(250, 78, 247); left:0px; top:0px;}
+    0% {transform: translateX(0px) translateY(0);}
+    5%, 24.5%  {transform: translateX(452px) translateY(0px);}
+    25% {background-color:rgb(251, 251, 52);} 
+    26%, 49.5%  {transform: translateX(0px) translateY(452px);}
+    50% {background-color:rgb(83, 83, 243);}
+    51%, 74.5%  {transform: translateX(452px) translateY(452px);}
+    75% {background-color:rgb(85, 247, 85); }
+    76%, 99.5% {transform: translateX(0px) translateY(0px)}
+    100% {background-color:rgb(227, 105, 246);} 
+
   }
  
