@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 51);
+    perspective: 800px;
+}
+
+main{
+    width: 60vw;
+    height: 80vh;
+    color: rgb(255, 230, 0);
+    animation: crawler 180s infinite;
+}
+ img{
+    width: 100%;
+ }
+ p{
+    font-size: 1.5rem;
+ }
+
+ @keyframes crawler{
+    from {
+        transform: rotateX(60deg) translateY(800px);
+    }
+    75%{
+        opacity: 0.5;
+    }
+    to{
+        transform: rotateX(60deg) translateY(-6000px);
+        opacity: 0;
+    }
+}
