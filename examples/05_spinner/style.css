@@ -1,0 +1,59 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.spinner {
+  width: 2rem;
+  height: 9rem;
+  position: relative;
+  border: 2px solid #ff00b7;
+  box-sizing: border-box;
+  animation: rotation 2s infinite;
+}
+
+.cube-1 {
+  position: absolute;
+  border: 2px solid #bbf902;
+  width: 1.5rem;
+  height: 6.5rem;
+  animation: cube 1.95s infinite;
+}
+
+.cube-2 {
+  position: absolute;
+  border: 2px solid #02f9f5;
+  width: 1.5rem;
+  height: 6.5rem;
+  animation: cube 1.9s infinite;
+}
+
+.cube-3 {
+  position: absolute;
+  border: 2px solid #9602f9;
+  width: 1.5rem;
+  height: 6.5rem;
+  animation: cube 1.85s infinite; 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
